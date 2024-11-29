@@ -14,7 +14,7 @@ public class WebForm {
     private By female = By.id("checkbox-2");
     private By preferNot = By.id("checkbox-3");
     private By date = By.id("datepicker");
-//    private By submitBtn = By.cssSelector("a[role='button']");
+//    private By submitBtn = By.xpath("//a[@role='button']");
 
     public WebForm(WebDriver driver){
         this.driver = driver;
