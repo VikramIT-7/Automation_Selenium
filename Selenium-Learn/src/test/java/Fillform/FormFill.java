@@ -1,7 +1,6 @@
 package Fillform;
 
-import Base.baseTests;
-import Formy.ThanksPage;
+import Internet.Page.Base.baseTests;
 import org.testng.annotations.Test;
 
 public class FormFill extends baseTests {

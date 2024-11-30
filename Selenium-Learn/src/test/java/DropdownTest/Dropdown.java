@@ -1,6 +1,6 @@
 package DropdownTest;
 
-import Base.baseTests;
+import Internet.Page.Base.baseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

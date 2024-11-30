@@ -1,11 +1,9 @@
 package Login;
 
-import Base.baseTests;
-import Pages.LoginPage;
-import Pages.secureAreaPage;
+import Internet.Page.Base.baseTests;
+import Internet.Pages.LoginPage;
+import Internet.Pages.secureAreaPage;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class LoginTest extends baseTests {
     @Test
