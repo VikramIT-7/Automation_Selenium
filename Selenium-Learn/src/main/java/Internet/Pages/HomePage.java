@@ -8,6 +8,7 @@ public class HomePage {
     private By formAuthenticationLink = By.linkText("Form Authentication");
     private By dropdownLink = By.linkText("Dropdown");
     private By HoversLink = By.linkText("Hovers");
+    private By keyPresses = By.linkText("Key Presses");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -26,6 +27,11 @@ public class HomePage {
     public HoversPage clickHovers(){
         driver.findElement(HoversLink).click();
         return new HoversPage(driver);
+    }
+
+    public KeyPressesPage key(){
+        driver.findElement(keyPresses).click();
+        return new KeyPressesPage(driver);
     }
 
 //    Generic method to call get links
