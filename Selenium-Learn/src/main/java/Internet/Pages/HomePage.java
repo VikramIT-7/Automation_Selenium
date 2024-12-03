@@ -9,6 +9,7 @@ public class HomePage {
     private By dropdownLink = By.linkText("Dropdown");
     private By HoversLink = By.linkText("Hovers");
     private By keyPresses = By.linkText("Key Presses");
+    private By JSalerts = By.linkText("JavaScript Alerts");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -32,6 +33,11 @@ public class HomePage {
     public KeyPressesPage key(){
         driver.findElement(keyPresses).click();
         return new KeyPressesPage(driver);
+    }
+
+    public jsAlertPage alert(){
+        driver.findElement(JSalerts).click();
+        return new jsAlertPage(driver);
     }
 
 //    Generic method to call get links
