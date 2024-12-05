@@ -10,6 +10,9 @@ public class HomePage {
     private By HoversLink = By.linkText("Hovers");
     private By keyPresses = By.linkText("Key Presses");
     private By JSalerts = By.linkText("JavaScript Alerts");
+    private By fileUpload = By.linkText("File Upload");
+    private By entryAd = By.linkText("Entry Ad");
+    private By contextMenu = By.linkText("Context Menu");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -38,6 +41,21 @@ public class HomePage {
     public jsAlertPage alert(){
         driver.findElement(JSalerts).click();
         return new jsAlertPage(driver);
+    }
+
+    public fileUploadPage file(){
+        driver.findElement(fileUpload).click();
+        return new fileUploadPage(driver);
+    }
+
+    public EntryAdPage entryAd(){
+        driver.findElement(entryAd).click();
+        return new EntryAdPage(driver);
+    }
+
+    public ContextMenuPage contextMenu(){
+        driver.findElement(contextMenu).click();
+        return new ContextMenuPage(driver);
     }
 
 //    Generic method to call get links
