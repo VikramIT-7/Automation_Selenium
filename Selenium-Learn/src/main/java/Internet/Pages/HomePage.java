@@ -15,6 +15,7 @@ public class HomePage {
     private By contextMenu = By.linkText("Context Menu");
     private By wysiwyg = By.linkText("WYSIWYG Editor");
     private By frame = By.linkText("Frames");
+    private By dynamicLoading = By.linkText("Dynamic Loading");
 
 
     public HomePage(WebDriver driver){
@@ -71,6 +72,10 @@ public class HomePage {
         return new FramesPage(driver);
     }
 
+    public DynamicLoadingPage Dynamic(){
+        driver.findElement(dynamicLoading).click();
+        return new DynamicLoadingPage(driver);
+    }
 
 
 
