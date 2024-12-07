@@ -1,6 +1,5 @@
 package Internet.Pages;
 
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,6 +13,9 @@ public class HomePage {
     private By fileUpload = By.linkText("File Upload");
     private By entryAd = By.linkText("Entry Ad");
     private By contextMenu = By.linkText("Context Menu");
+    private By wysiwyg = By.linkText("WYSIWYG Editor");
+    private By frame = By.linkText("Frames");
+
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -58,6 +60,20 @@ public class HomePage {
         driver.findElement(contextMenu).click();
         return new ContextMenuPage(driver);
     }
+
+    public WysiwygPage Wysiwyg(){
+        driver.findElement(wysiwyg).click();
+        return new WysiwygPage(driver);
+    }
+
+    public FramesPage frame(){
+        driver.findElement(frame).click();
+        return new FramesPage(driver);
+    }
+
+
+
+
 
 //    Generic method to call get links
 //    private void getLink(String textLink){
