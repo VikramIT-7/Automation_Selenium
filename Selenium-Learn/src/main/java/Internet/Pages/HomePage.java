@@ -16,6 +16,8 @@ public class HomePage {
     private By wysiwyg = By.linkText("WYSIWYG Editor");
     private By frame = By.linkText("Frames");
     private By dynamicLoading = By.linkText("Dynamic Loading");
+    private By largeAndDeepDom = By.linkText("Large & Deep DOM");
+    private By infiniteScroll = By.linkText("Infinite Scroll");
 
 
     public HomePage(WebDriver driver){
@@ -75,6 +77,16 @@ public class HomePage {
     public DynamicLoadingPage Dynamic(){
         driver.findElement(dynamicLoading).click();
         return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage LDP(){
+        driver.findElement(largeAndDeepDom).click();
+        return new LargeAndDeepDomPage(driver);
+    }
+
+    public InfiniteScrollPage infiniteScrollPage(){
+        driver.findElement(infiniteScroll).click();
+        return new InfiniteScrollPage(driver);
     }
 
 
