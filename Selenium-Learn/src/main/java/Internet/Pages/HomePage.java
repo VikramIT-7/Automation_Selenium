@@ -18,6 +18,7 @@ public class HomePage {
     private By dynamicLoading = By.linkText("Dynamic Loading");
     private By largeAndDeepDom = By.linkText("Large & Deep DOM");
     private By infiniteScroll = By.linkText("Infinite Scroll");
+    private By multipleWindows = By.linkText("Multiple Windows");
 
 
     public HomePage(WebDriver driver){
@@ -87,6 +88,11 @@ public class HomePage {
     public InfiniteScrollPage infiniteScrollPage(){
         driver.findElement(infiniteScroll).click();
         return new InfiniteScrollPage(driver);
+    }
+
+    public MultipleWindowsPage multipleWindowsPage(){
+        driver.findElement(multipleWindows).click();
+        return new MultipleWindowsPage(driver);
     }
 
 

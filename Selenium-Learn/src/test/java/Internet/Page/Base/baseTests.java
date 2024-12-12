@@ -2,6 +2,7 @@ package Internet.Page.Base;
 
 import Formy.WebForm;
 import Internet.Pages.HomePage;
+import WindowManager.WindowsManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -32,5 +33,9 @@ public class baseTests {
     @AfterClass
     public void tearDown(){
         driver.quit();
+    }
+
+    public WindowsManager manager(){
+        return new WindowsManager(driver);
     }
 }
