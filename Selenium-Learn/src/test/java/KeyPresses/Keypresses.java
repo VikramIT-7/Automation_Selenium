@@ -1,6 +1,6 @@
 package KeyPresses;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 

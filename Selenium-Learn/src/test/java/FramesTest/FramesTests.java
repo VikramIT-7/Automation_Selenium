@@ -1,6 +1,6 @@
 package FramesTest;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import Internet.Pages.NestedFrame;
 import org.testng.annotations.Test;
 

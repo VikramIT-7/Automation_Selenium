@@ -1,6 +1,6 @@
 package Login;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import Internet.Pages.LoginPage;
 import Internet.Pages.secureAreaPage;
 import org.testng.annotations.Test;

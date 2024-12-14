@@ -1,4 +1,4 @@
-package WindowManager;
+package Utility;
 
 import org.openqa.selenium.WebDriver;
 

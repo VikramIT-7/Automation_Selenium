@@ -1,9 +1,6 @@
 package Hovers;
 
-import Internet.Page.Base.baseTests;
-import Internet.Pages.HoversPage;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import BaseTest.baseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;

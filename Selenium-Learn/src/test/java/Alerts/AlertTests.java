@@ -1,6 +1,6 @@
 package Alerts;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;

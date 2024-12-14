@@ -1,6 +1,6 @@
 package MultipleWindowsTest;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import org.testng.annotations.Test;
 
 public class MultipleWindowsTests extends baseTests {

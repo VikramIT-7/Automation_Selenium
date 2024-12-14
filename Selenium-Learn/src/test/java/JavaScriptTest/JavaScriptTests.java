@@ -1,6 +1,6 @@
 package JavaScriptTest;
 
-import Internet.Page.Base.baseTests;
+import BaseTest.baseTests;
 import org.testng.annotations.Test;
 
 public class JavaScriptTests extends baseTests {
