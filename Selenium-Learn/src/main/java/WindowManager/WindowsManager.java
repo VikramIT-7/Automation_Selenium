@@ -49,6 +49,10 @@ public class WindowsManager {
                 break;
             }
         }
+    }
 
+    public void switchToNewWindow(){
+        var windows = driver.getWindowHandles();
+        windows.forEach(driver.switchTo()::window);
     }
 }
