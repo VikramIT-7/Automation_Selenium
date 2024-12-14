@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class baseTests {
 
-    private WebDriver driver;
+    protected WebDriver driver;
     protected HomePage homepage;
     protected WebForm webForm;
     @BeforeClass

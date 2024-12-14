@@ -11,7 +11,7 @@ public class Keypresses extends baseTests {
     @Test
     public void testMessage(){
         var KeyPage = homepage.key();
-        KeyPage.enterText("₹" + Keys.BACK_SPACE);
-        assertEquals(KeyPage.getMessage(), "You entered: BACK_SPACE", "Message is incorrect");
+        KeyPage.enterText("₹" + Keys.LEFT_CONTROL);
+        assertEquals(KeyPage.getMessage(), "You entered: CONTROL", "Message is incorrect");
     }
 }
